@@ -124,6 +124,18 @@ userdao.mapper文件中的id
 
 4、关闭sqlsession
 
+
+
+## 注意
+
+1. 创建IUSerDao.xml和IUserDao.java时名称时为了与之前学的一致，在Mybatis中把持久层的操作接口名称和映射文件也叫做Mapper
+2. 在IDEA中创建目录时，它和包不一样
+3. mybatis的映射配置文件位置必须和dao接口的包结构相同
+4. 映射配置文件的mapper标签namespace属性的取值必须是dao接口的全限定类名
+5. 映射配置文件的操作配置，id属性的取值必须是dao接口的方法名
+
+当遵从了3,4,5点后，在开发中就无需再写dao的实现类
+
 # CRUD
 
 ## namespace
